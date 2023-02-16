@@ -1,48 +1,54 @@
-<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles/style.scss" />
+    <link rel="stylesheet" href="./src/styles/style.scss" />
     <title>Bulbizarre</title>
   </head>
   <body>
     <section class="card">
-      <header>
-        <p>Pokémon de base</p>
-        <h1>Bulbizarre</h1>
-      </header>
-      <div>
-        <p>40 PV</p>
-        <img src="./src/img/leaf.png" alt="icone type feuille">
+      <div class="responsive__1">
+        <header class="header">
+          <p class="header__subtitle">Pokémon de base</p>
+          <div class="header__poke">
+            <h1 class="header__title">Bulbizarre</h1>
+            <div class="type">
+              <p class="type__pv">40 PV</p>
+              <img src="./src/img/leaf.png" alt="icone type feuille" class="type__img" />
+            </div>
+          </div>
+        </header>
+
+        <figure class="illustration">
+          <img src="./src/img/bulbizarre.jpg" alt="bulbi bulbizaaaaarre" class="illustration__img" />
+          <figcaption class="illustration__description">Pokémon Graine. Taille : 0.7m, poids: 6.9kg</figcaption>
+        </figure>
       </div>
-      <figure>
-        <img src="./src/img/bulbizarre.jpg" alt="bulbi bulbizaaaaarre">
-        <figcaption>Pokémon Graine. Taille : 0.7m, poids: 6.9kg</figcaption>
-      </figure>
-      <div>
-        <div>
-          <img src="./src/img/leaf.png" alt="icone type feuille">
-          <img src="./src/img/leaf.png" alt="icone type feuille">
+      <div class="responsive__2">
+        <div class="attack">
+          <div class="attack__types">
+            <img src="./src/img/leaf.png" alt="icone_type_feuille" class="attack__type" />
+            <img src="./src/img/leaf.png" alt="icone_type_feuille" class="attack__type" />
+          </div>
+          <p class="attack__description"><span>Vampigraine</span> À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de Bulbizarre.</p>
+          <p class="attack__damage">20</p>
         </div>
-        <p>Vampigraine À moins que tous les dégâts infligés par cette attaque ne soient prévenus, vous pouvez retirer 1 marqueur de dégâts de Bulbizarre.</p>
-        <p>20</p>
+        <div class="weakness">
+          <div class="weakness__child">
+            <p class="weakness__child_text">Faiblesse</p>
+            <img src="./src/img/fire.png" alt="icone type feu" class="weakness__child_img" />
+          </div>
+          <div class="weakness__child">
+            <p class="weakness__child_text">Résistance</p>
+          </div>
+          <div class="weakness__child">
+            <p class="weakness__child_text">Coût de retraite</p>
+            <img src="./src/img/normal.png" alt="icone type normal" class="weakness__child_img" />
+          </div>
+        </div>
+        <footer>Il a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1</footer>
       </div>
-      <div>
-        <div>
-          <p>Faiblesse</p>
-          <img src="./src/img/fire.png" alt="icone type feu">
-        </div>
-        <div>
-          <p>Résistance</p>
-        </div>
-        <div>
-          <p>Coût de retraite</p>
-          <img src="./src/img/normal.png" alt="icone type normal">
-        </div>
-      </div>
-      <footer>Il  a une étrange graine plantée sur son dos. Elle grandit avec lui depuis la naissance. NIV. 13 No. 1</footer>
     </section>
   </body>
 </html>
